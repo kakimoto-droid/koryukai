@@ -334,6 +334,94 @@ footer .name small{display:block;font-family:var(--sans);font-size:11px;letter-s
 .stage .tail{margin-top:22px;font-family:var(--sans);font-size:13px;letter-spacing:.16em;color:var(--crimson)}
 .stage .tail small{font-size:11px;letter-spacing:.14em;color:var(--ink-2)}
 @media (max-width:900px){.stage .wrap{grid-template-columns:1fr;gap:28px}.stage .pic{order:2}}
+
+/* 第9版（10/29）＝なぜ、私たちがやるのか */
+.reason{background:var(--cream);position:relative;overflow:hidden}
+.reason .wrap{padding-block:116px 104px}
+.reason-2 .wrap{padding-block:104px 120px}
+.rs-head{max-width:860px}
+.reason h2{font-size:clamp(30px,4vw,50px);color:var(--crimson);letter-spacing:.06em;margin-top:22px}
+.rs-lead{font-size:clamp(20px,2.4vw,27px);line-height:1.85;letter-spacing:.05em;margin-top:28px;padding-left:22px;border-left:2px solid var(--gold);font-weight:500}
+.rs-txt p{font-size:17px;line-height:2.1}
+.rs-txt p+p{margin-top:18px}
+.rs-key{color:var(--crimson);font-weight:600;font-size:18px !important;letter-spacing:.04em}
+.rs-1873{display:grid;grid-template-columns:4fr 7fr;gap:56px;margin-top:88px;padding-top:56px;border-top:1px solid var(--gold-2);align-items:start}
+.rs-yr{position:sticky;top:32px}
+.rs-yr .bigyr{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(76px,10vw,140px);line-height:.9;letter-spacing:.01em;background:linear-gradient(180deg,var(--gold-2),var(--gold) 55%,#8a6d2e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.rs-cap{display:block;margin-top:16px;font-family:var(--sans);font-size:12px;letter-spacing:.3em;color:var(--gold)}
+.rs-150{margin-top:80px;padding-top:56px;border-top:1px solid var(--gold-2)}
+.rs-150 .rs-txt{max-width:760px}
+.rs-150 .dir{max-width:860px;margin:56px auto 0}
+.dir{margin:0}
+.dir svg{width:100%;height:auto;display:block}
+.turn{background:radial-gradient(ellipse 80% 90% at 50% 40%,#8D1B2E 0%,var(--crimson) 50%,#5F101F 100%);color:#fff;position:relative;overflow:hidden}
+.turn::before{content:"";position:absolute;inset:0;background-image:url("img/asanoha.svg");background-size:36px 62.35px;opacity:.14;mix-blend-mode:screen;pointer-events:none}
+.turn .wrap{padding-block:88px 92px;text-align:center}
+.turn .orn{color:var(--gold-2);margin-bottom:26px}
+.turn .orn::before{background:linear-gradient(90deg,transparent,var(--gold-2))}
+.turn .orn::after{background:linear-gradient(90deg,var(--gold-2),transparent)}
+.turn-line{font-size:clamp(26px,4.2vw,52px);letter-spacing:.1em;line-height:1.6;font-weight:600}
+.rs-now{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.axes{margin-top:64px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.ax-h,.ax-r{display:grid;grid-template-columns:120px 1fr 1fr 1fr}
+.ax-h b{font-size:21px;color:var(--crimson);letter-spacing:.2em;padding:20px 24px 14px;font-weight:600}
+.ax-r{border-top:1px solid var(--gold-2)}
+.ax-r p{padding:20px 24px;font-family:var(--sans);font-size:15px;line-height:1.85;letter-spacing:.03em;color:var(--ink-2)}
+.ax-r p+p,.ax-h b+b{border-left:1px solid var(--gold-2)}
+.ax-y{padding:20px 0 20px 4px;font-size:22px;color:var(--gold);font-weight:500;letter-spacing:.06em}
+.ax-r.now{background:var(--rose)}
+.ax-r.now .ax-y{color:var(--crimson);font-weight:600}
+.ax-r.now p{color:var(--ink)}
+.rs-act{display:grid;grid-template-columns:7fr 5fr;gap:56px;margin-top:88px;align-items:start}
+.rs-future{border-left:1px solid var(--gold-2);padding-left:48px}
+.rs-y2{font-size:clamp(54px,6vw,80px) !important;line-height:1 !important;color:var(--crimson);font-weight:500;letter-spacing:.02em;margin-bottom:22px}
+.rs-y2 small{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-top:12px;font-weight:400}
+.rs-close{margin-top:96px;padding:56px 48px 52px;text-align:center}
+.rs-close ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr)}
+.rs-close li{font-size:19px;letter-spacing:.04em;line-height:1.8;padding:6px 14px;color:var(--crimson);font-weight:500}
+.rs-close li+li{border-left:1px solid var(--gold-2)}
+.rs-close p{margin-top:30px;font-size:17px;line-height:2}
+.rs-close .btn{margin-top:30px}
+@media (max-width:900px){
+  .rs-1873,.rs-150,.rs-now,.rs-act{grid-template-columns:1fr;gap:32px}
+  .rs-yr{position:static}
+  .rs-future{border-left:0;padding-left:0;border-top:1px solid var(--gold-2);padding-top:32px}
+  .ax-h{display:none}
+  .ax-r{grid-template-columns:1fr}
+  .ax-r p+p{border-left:0}
+  .ax-r p{padding:10px 4px 10px 0}
+  .ax-r p::before{display:block;font-family:var(--serif);font-size:15px;color:var(--crimson);font-weight:600;letter-spacing:.16em}
+  .ax-r p:nth-of-type(1)::before{content:"文化"}
+  .ax-r p:nth-of-type(2)::before{content:"経済"}
+  .ax-r p:nth-of-type(3)::before{content:"人づくり"}
+  .ax-r{padding:14px 16px}
+  .ax-y{padding:4px 0}
+  .rs-close{padding:40px 22px 40px}
+  .rs-close ul{grid-template-columns:1fr}
+  .rs-close li+li{border-left:0;border-top:1px solid var(--gold-2)}
+  .rs-close li{padding:12px 4px}
+}
+@media (max-width:520px){
+  .reason .wrap{padding-block:88px 80px}
+  .rs-lead{padding-left:16px}
+  .turn .wrap{padding-block:64px 68px}
+}
+
+.dir-m{display:none}
+@media (max-width:520px){
+  .reason .u,.turn .u{display:inline}
+  .reason p,.reason li,.turn p{word-break:auto-phrase}
+  .rs-150 .dir{display:none}
+  .dir-m{display:block;list-style:none;margin:40px 0 0;padding:0;border-top:1px solid var(--gold-2)}
+  .dir-m li{display:grid;grid-template-columns:auto 1fr;column-gap:14px;padding:16px 0;border-bottom:1px solid var(--gold-2)}
+  .dir-m b{grid-row:1/3;font-weight:500;color:var(--gold);font-size:15px;min-width:96px}
+  .dir-m span{font-size:18px;color:var(--ink);letter-spacing:.06em}
+  .dir-m small{font-family:var(--sans);font-size:13.5px;color:var(--ink-2)}
+  .dir-m li.thick span{color:var(--crimson);font-weight:600}
+  .dir-m li.now{background:var(--rose);padding-left:12px;padding-right:12px}
+  .dir-m li.now b,.dir-m li.now span{color:var(--crimson);font-weight:600}
+}
+@media (max-width:520px){.reason .ax-r .u{display:inline-block}.dir-m li{padding-left:12px;padding-right:12px}}
 </style></head><body>
 
 <header class="hero">
@@ -415,6 +503,80 @@ footer .name small{display:block;font-family:var(--sans);font-size:11px;letter-s
         <p><span class="u">文化・芸術交流、</span><span class="u">企業・人的交流、</span><span class="u">文化顕彰を</span><span class="u">一つひとつ育て、</span><span class="u">2029年の</span><span class="u">国交樹立160周年へ</span><span class="u">つなげていきます。</span></p>
       </div>
     </div>
+</section>
+
+<!-- 第9版（10/29）＝なぜ、私たちがやるのか -->
+<section class="reason band" id="why-us">
+  <div class="wrap">
+    <div class="rs-head">
+      <p class="eyebrow">Why we do this</p>
+      <h2>なぜ、<br class="m">私たちがやるのか。</h2>
+      <p class="rs-lead"><span class="u">日本の文化を持って、</span><span class="u">日本からウィーンへ出向く流れを、</span><span class="u">毎年つくるためです。</span></p>
+    </div>
+    <div class="rs-1873">
+      <div class="rs-yr"><span class="bigyr">1873</span><span class="rs-cap">WELTAUSSTELLUNG WIEN</span></div>
+      <div class="rs-txt"><p><span class="u">1873年のウィーン万国博覧会に、</span><span class="u">明治の日本は、</span><span class="u">国として初めて公式に参加しました。</span><span class="u">佐野常民らが率いた一行は、</span><span class="u">会場に神社と日本庭園を造り、</span><span class="u">全国の工芸品を並べました。</span><span class="u">皇帝フランツ・ヨーゼフ1世と皇后エリーザベトが庭園を訪れ、</span><span class="u">日本の出品は名誉賞を含む218の賞を受けました。</span></p><p><span class="u">この時、</span><span class="u">動いたのは文化だけではありませんでした。</span><span class="u">ウィーンでは日本の美術への熱が広がり、</span><span class="u">のちの分離派やクリムトにまで受け継がれました。</span><span class="u">出品物の多くはヨーロッパの博物館に贈られ、</span><span class="u">その一つがいまのウィーン応用美術館（MAK）です。</span><span class="u">日本の側では、</span><span class="u">工芸品を欧米へ売る商社が生まれ、</span><span class="u">24人の技術伝習生がヨーロッパで学んで、</span><span class="u">帰国後に養蚕や製陶の新しい産業を起こしました。</span><span class="u">ウィーンでの経験は、</span><span class="u">日本の博覧会や技術の学校づくりにも生かされました。</span></p><p class="rs-key"><span class="u">文化が人の目を引き、</span><span class="u">売れる物になり、</span><span class="u">学んだ人が産業を興す。</span><span class="u">両方の国で、</span><span class="u">文化と経済と人づくりが一緒に動きました。</span></p></div>
+    </div>
+    <div class="rs-150">
+      <div class="rs-txt"><p><span class="u">その後の150年、</span><span class="u">太く続いてきたのは、</span><span class="u">ウィーンが日本へ来てくれる行き来でした。</span><span class="u">ウィーン少年合唱団は1955年から日本を36回巡り、</span><span class="u">日本の企業はウィーンの歌劇場やオーケストラの奏者を招く公演を、</span><span class="u">長年支えてきました。</span></p><p><span class="u">この行き来は、</span><span class="u">これからも大切です。</span><span class="u">そこにもう一つ、</span><span class="u">日本の文化を持ってウィーンへ出向く向きを加えたい。</span></p></div>
+      <figure class="dir" aria-label="日本とウィーンの行き来の向き">
+<svg viewBox="0 0 760 290" role="img" aria-labelledby="dirT"><title id="dirT">1873年は日本からウィーンへ。その後の150年はウィーンから日本へが太く続いた。2027年から、日本からウィーンへの向きを毎年加える。</title>
+<defs><marker id="ahG" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#B4934E"/></marker>
+<marker id="ahC" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7A1526"/></marker>
+<marker id="ahB" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="3.2" markerHeight="3.2" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7A1526"/></marker></defs>
+<g font-family="Noto Serif JP,Hiragino Mincho ProN,serif">
+<circle cx="88" cy="145" r="66" fill="#FBF7F0" stroke="#B4934E"/><circle cx="88" cy="145" r="60" fill="none" stroke="#D9C58F"/>
+<text x="88" y="154" text-anchor="middle" font-size="26" fill="#7A1526" font-weight="600">日本</text>
+<circle cx="672" cy="145" r="66" fill="#FBF7F0" stroke="#B4934E"/><circle cx="672" cy="145" r="60" fill="none" stroke="#D9C58F"/>
+<text x="672" y="154" text-anchor="middle" font-size="24" fill="#7A1526" font-weight="600">ウィーン</text>
+<path d="M150,108 C290,32 470,32 610,108" fill="none" stroke="#B4934E" stroke-width="2" marker-end="url(#ahG)"/>
+<text x="380" y="34" text-anchor="middle" font-size="17" fill="#5A4A42" letter-spacing="2">1873　万国博覧会へ、日本から</text>
+<path d="M162,132 C300,80 460,80 598,132" fill="none" stroke="#7A1526" stroke-width="2.6" stroke-dasharray="8 7" marker-end="url(#ahC)"/>
+<text x="380" y="126" text-anchor="middle" font-size="17" fill="#7A1526" font-weight="600" letter-spacing="2">2027 –　毎年2月、日本から</text>
+<path d="M600,186 C460,246 300,246 166,186" fill="none" stroke="#7A1526" stroke-width="10" stroke-linecap="round" marker-end="url(#ahB)" opacity=".88"/>
+<text x="380" y="280" text-anchor="middle" font-size="17" fill="#5A4A42" letter-spacing="2">その後の150年　ウィーンの音楽家を、日本へ</text>
+</g></svg></figure>
+      <ol class="dir-m" aria-hidden="true">
+        <li><b>1873</b><span>日本 → ウィーン</span><small>万国博覧会へ、日本から</small></li>
+        <li class="thick"><b>その後の150年</b><span>ウィーン → 日本</span><small>ウィーンの音楽家を、日本へ</small></li>
+        <li class="now"><b>2027 –</b><span>日本 → ウィーン</span><small>毎年2月、日本から</small></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="turn band" aria-label="今度は、日本から">
+  <div class="wrap">
+    <p class="orn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z" fill="currentColor"/></svg></p>
+    <p class="turn-line"><span class="u">今度は、</span><span class="u">もう一度、</span><br><span class="u">日本から持って行く</span><span class="u">番です。</span></p>
+  </div>
+</section>
+
+<section class="reason reason-2 band">
+  <div class="wrap">
+    <div class="rs-now">
+      <div class="rs-txt"><p><span class="u">舞踏会の季節にあたる1月は、</span><span class="u">日本からウィーンに泊まる人が一年で最も少ない月です。</span><span class="u">その季節に、</span><span class="u">毎年、</span><span class="u">日本から人を連れて行きます。</span><span class="u">日本の側では、</span><span class="u">伝統的工芸品の生産額が、</span><span class="u">1983年からの30年あまりで5分の1以下になりました。</span><span class="u">日本の工芸や服には、</span><span class="u">海外で直接見てもらい、</span><span class="u">手に取ってもらう場が要ります。</span></p></div>
+      <div class="rs-txt"><p class="rs-key"><span class="u">私たちがウィーンで重ねたいのも、</span><span class="u">1873年と同じ形です。</span><span class="u">舞踏会の場で日本の文化に目を留めてもらい、</span><span class="u">工芸や服を手に取ってもらい、</span><span class="u">日本から行った人が現地の人と知り合って帰ってくる。</span><span class="u">文化と経済と人の行き来を、</span><span class="u">一緒に、</span><span class="u">毎年動かします。</span></p></div>
+    </div>
+    <div class="axes" role="table" aria-label="1873年と、私たちが毎年重ねたい形">
+<div class="ax-h" role="row"><span role="columnheader"></span><b role="columnheader">文化</b><b role="columnheader">経済</b><b role="columnheader">人づくり</b></div>
+<div class="ax-r" role="row"><span class="ax-y" role="rowheader">1873</span><p role="cell"><span class="u">日本の美術への熱が、</span><span class="u">分離派やクリムトへ</span></p><p role="cell"><span class="u">工芸品を欧米へ売る</span><span class="u">商社が生まれる</span></p><p role="cell"><span class="u">24人の技術伝習生が学び、</span><span class="u">産業を興す</span></p></div>
+<div class="ax-r now" role="row"><span class="ax-y" role="rowheader">毎年</span><p role="cell"><span class="u">舞踏会の場で、</span><span class="u">日本の文化に</span><span class="u">目を留めてもらう</span></p><p role="cell"><span class="u">工芸や服を、</span><span class="u">手に取ってもらう</span></p><p role="cell"><span class="u">日本から行った人が、</span><span class="u">現地の人と</span><span class="u">知り合って帰る</span></p></div>
+</div>
+    <div class="rs-act">
+      <div class="rs-txt"><p><span class="u">2026年2月、</span><span class="u">私たちはウィーンの舞踏会に日本から加わりました。</span><span class="u">冬の舞踏会の季節には60万人を超える人が集まり、</span><span class="u">その約3割が海外から訪れます。</span></p><p class="rs-key"><span class="u">この場に、</span><span class="u">毎年、</span><span class="u">日本から人と文化を連れて行く。</span><span class="u">そう決めて、</span><span class="u">この会をつくりました。</span></p><p><span class="u">正装で舞踏会に加わる人も、</span><span class="u">ウィーンで日本の服や工芸を見せたい人も、</span><span class="u">ご一緒できます。</span><span class="u">オーストリアの方が来日される時には、</span><span class="u">日本でお迎えします。</span></p></div>
+      <div class="rs-txt rs-future"><p class="rs-y2">2029<small>160TH ANNIVERSARY</small></p><p><span class="u">2029年の国交160周年には、</span><span class="u">それまでにウィーンへ出向いた人と文化を、</span><span class="u">大きな形でお見せしたいと考えています。</span></p><p class="rs-key"><span class="u">ただ、</span><span class="u">この会は160周年で終わりません。</span><span class="u">翌年の2月にも、</span><span class="u">私たちはウィーンへ向かいます。</span></p></div>
+    </div>
+    <div class="rs-close frame">
+      <ul>
+        <li><span class="u">ウィーンの大広間に</span><span class="u">立ってみたい。</span></li>
+        <li><span class="u">ウィーンの人に</span><span class="u">見てもらいたい物がある。</span></li>
+        <li><span class="u">オーストリアの方を</span><span class="u">日本で迎えたい。</span></li>
+      </ul>
+      <p><span class="u">ご一緒できる方と、</span><span class="u">お会いしたいと思っています。</span></p>
+      <a class="btn" href="#join">この交流会に参加する</a>
+    </div>
+  </div>
 </section>
 
 <section class="ball band" id="ball">
